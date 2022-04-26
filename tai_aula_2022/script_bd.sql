@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
   `telefone` varchar(20) COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
-  `cpf` varchar(14) COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
+  `cpf` varchar(14) COLLATE utf8mb4_bin NOT NULL DEFAULT '0',
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- Copiando dados para a tabela db_aula_tai.usuario: ~2 rows (aproximadamente)

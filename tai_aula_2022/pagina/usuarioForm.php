@@ -1,5 +1,5 @@
 <?php
-    include "./database/bd.php"
+    include "../database/bd.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,15 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./pagina/usuarioList.php"> Ver</a>
-<h2>Crud usuario: </h2>
 <?php
     $objBD = new BD();
     $objBD->conn();
-    $result = $objBD->select();
-    foreach ($result as $item){
-    echo "ID".$item['id']." Nome: ".$item['nome'] ."<br>" . "Telefone:". $item['telefone'] . "CPF:" . $item['cpf']."<br>";
-    }
 
     if(!empty($_post)){
         echo "Salvar";
